@@ -49,5 +49,47 @@
 	});
 
 
+
+$('.newsletter-image').each(function(e) { 
+   var bg_ = 'url(' + $(this).find('img').attr('src') + ')';
+       
+   $(this).find('img').hide();
+   $(this).css('background-image', bg_);
+  });
+
+
+$(document).ready(function() {
+			$('.smheight').matchHeight();
+	
+      	});
+
+
+
+  
+
+
+    $(document).ready(function(){
+    //Mobile Menu
+   $('#simple-menu').sidr({
+        name: 'sidr-main',
+        side: 'right',
+        source: '#sidr' 
+    });
+
+   $(document).mouseup(function(evt){
+    var Cont = $('.sidr-inner');
+    if(Cont != evt.target) {
+       $.sidr('close', 'sidr-main');
+    }
+   });
+  
+});
+
+
+
+    $('ul.accordion').accordion();
+
 })(jQuery);
+
+
 

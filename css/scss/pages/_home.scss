@@ -1,0 +1,264 @@
+#banner{
+	position: relative;
+	margin-top: 15px;
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+	.item{
+		height: 100vh;
+		div{
+			position: absolute;
+		    height: auto;
+		    top: 50%;
+		    left: 10%;
+		    @include prefix(transform, translateY(-50%), webkit moz ms o);
+		    width: 40%; 
+		    h5{
+		    	font-size: 1em;
+		    	color: #a8dedd;
+		    	text-transform: uppercase;
+		    	letter-spacing: 0.050em;
+		    	margin-top: 0;
+		    }
+		    h2{
+		    	color: $theme-color;
+		    	font-size: 4em;
+		    	letter-spacing: 0.050em;
+		    	margin-bottom: 0;
+		    	font-weight: 400;
+		    	font-family: $font-family-3;
+
+		    }
+		    p{
+		    	color: #cecece;
+		    	margin-top: 5px;
+		    }
+		    a{
+		    	letter-spacing: 0.050em;
+		    	&:hover, &:focus{
+		    		color: $orange;
+		    		text-decoration: none;
+		    	}
+		    }
+		}
+	  }
+	.owl-dots{
+		text-align:center;
+		margin-top: 0;
+		position: absolute;
+		bottom: 7px;
+		right: 10px;
+		.owl-dot{
+			display: inline-block;
+			margin: 0 5px;
+			span{
+				width: 9px;
+				height: 7px;
+				display: inline-block;
+				background-color: #8c8c8c;
+				display: inline-block;
+				box-sizing: content-box;
+				vertical-align: middle;
+			}
+			&.active span{
+					background-color: $orange;
+				}
+		}
+	}
+}
+
+.tittle-wrap{
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 43px;
+	font-weight: 400;
+
+}
+.small-tittle{
+	color: #757575;
+	text-align: center;
+	margin: 0;
+}
+
+.trending-wrap{
+	margin-top: 18px;
+	.trending-women-wrap{
+	margin-top: 16px;
+	.women-clothing-img{
+		margin-top: 27px;
+		img{
+			width: 100%;
+		}
+	}
+}
+}
+
+.newsletter-wrap {
+	.tittle-wrap {
+		font-family: $font-family-3;
+		letter-spacing: 0.050em;
+		line-height: 26px;
+	}
+	.small-tittle{
+		font-family: $font-family-3;
+		letter-spacing: 0.025em;
+		font-size: 0.9285em;
+	}
+.newsletter-box{
+		max-width: 571px;
+		width: 100%;
+		margin: 40px auto 10px;
+		border: 1px solid #eeeeee;
+		padding: 10px 8px;
+		.form-group{
+			width: 75%;
+		}
+		.form-control{
+			border: none;
+			border-radius: 0;
+			width: 100%;
+			font-style: 0.9285em;
+			color: #999999;
+			box-shadow: none;
+			font-family: $font-family-2 ;
+
+		}
+		.btn-default{
+			font-size: 0.9285em;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.025em;
+		}
+	}
+}
+
+
+
+
+.singlerating{
+    text-align: center;
+    width:100%;
+    margin: 0  auto 40px;
+    .singlerating-inner{
+       border:1px solid #d2d2d2;
+       position: relative;
+       a .ion-android-favorite-outline{
+       	  font-size: 2.3em;
+       	  position: absolute;
+       	  top: 10px;
+       	  right: 10px;
+       	  opacity: 0;
+       	  z-index: 99;
+       	   @include transition(all 0.5s ease);
+       	   &:hover, &:focus{
+       	   	color: $orange;
+       	   }
+       }
+    img{
+      margin:0  auto;
+     }
+
+  }
+  .rating-wrap{
+  	position: relative;
+	h5{
+		font-size: 1.2857em;
+		font-family: $font-family-3;
+		margin: 0;
+		font-weight: 400;
+	}
+	h6{
+		font-size: 0.8571em;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+	.rate{
+		font-size: 1em;
+		color: #000;
+		font-weight: 500;
+		margin-top: -1px;
+		p{
+			margin: 0;
+			padding-top: 10px;
+			padding-bottom: 10px
+		}
+		span{
+			font-size: 0.8571em;
+			text-decoration: line-through;
+			color: #999999;
+		}
+	}
+}
+.add-card{
+	   position: absolute;
+	   top: 0;
+	   width: 100%;
+	   background: #fff;
+	   border:1px solid #d2d2d2;
+	   border-top: none;
+	   opacity: 0;
+	   @include transition(all 0.5s ease);
+	ul{
+		list-style: none;
+		padding-left: 0;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		li{
+			width: 50%;
+			float: left;
+			margin-bottom: 0;
+			border-left: 1px solid #d2d2d2;
+			line-height: 1;
+			&:first-child{
+				border-left: none;
+			}
+			a{
+				font-size: 2em;
+				&:hover, &:focus{
+					color: $orange;
+				}
+			}
+		}
+	}
+}
+&:hover .add-card , &:focus .add-card{
+	opacity: 1;
+	
+}
+&:hover .rate, &:focus .rate{
+	border: 1px solid #d2d2d2;
+	border-top: none;
+}
+ &:hover a .ion-android-favorite-outline{
+     	opacity: 1;
+     } 
+   
+}
+
+
+.product-slider{
+   .owl-prev{
+   	  position: absolute;
+   	  top: 50%;
+   	  left: -20px;
+   	  color: #9c9c9c;
+   	  font-size: 35px;
+   	  @include prefix(transform, translateY(-50%), webkit moz ms o);
+   }
+   .owl-next{
+   	  position: absolute;
+   	  top: 50%;
+   	  right: -20px;
+   	  color: #9c9c9c;
+   	  font-size: 35px;
+   	  @include prefix(transform, translateY(-50%), webkit moz ms o);
+   }
+   
+}
+.recently{
+	.tittle-wrap{
+   	margin-bottom: 25px;
+   }
+}

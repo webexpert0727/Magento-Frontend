@@ -12,14 +12,13 @@
 		<link rel="stylesheet" href="css/style.css" type="text/css">    
 	</head>
 	<body>
-		
 		<header id="header" class="container-fluid">
 			<div class="row">
 				<div class="container">
 					<div class=" top_icons_row">
 						<ul>
 							<li><a href="javascript:;"><i class="ion ion-android-favorite-outline"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-user-o"></i></a></li>
+							<li><a id="simple-menu"  href="#sidr"><i class="fa fa-user-o"></i></a></li>
 							<li><a href="javascript:;"><i class="ion ion-bag"></i></a></li>
 						</ul>
 					</div>
@@ -283,11 +282,85 @@
 	 </div>
 </footer>
 
+
+
+<div id="sidr">
+	<div class="side-bar">
+		<div class="side-bar-inner">
+			<h2>Login</h2>
+			<p>By creating an account with our store,</p>
+			<form>
+				<div class="form-group">
+					<input type="email" class="form-control" name="email" placeholder="E-MAIL">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="text" placeholder="PASSWORD">
+				</div>
+				<div class="form-group">
+					<p class="c-left">
+				    	<input type="checkbox" id="test2" >
+				    	<label for="test2" class="checkbox-label">Keep me logged in</label>
+				  	</p>
+				  	<a href="#" class="forgot-password">Forgot your password ?</a>
+				  	
+				</div>
+				<button type="submit" class="btn btn-default btn-white">Log In</button>
+			</form>
+			<div class="slide-bar-social-icon clearfix">
+				<h6>Login on social media</h6>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="ion ion-social-googleplus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+				</ul>
+			</div>
+			<h2 class="uppercase">Havn’t registerd yet ?</h2>
+			<a href="#" class="btn btn-default btn-white">regsiter now	</a>
+		</div>
+	</div>
+</div>
+
+<div class="side-bar">
+	<div class="side-bar-inner">
+		<h2>register</h2>
+		<p>By creating an account with our store, you will be able to move through the checkout process faster, track your orders in your account and more.</p>
+		<form>
+			<div class="form-group">
+				<input type="name" class="form-control" name="name" placeholder="SHYJU">
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" name="email" placeholder="E-MAIL">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="text" placeholder="PASSWORD">
+			</div>
+			
+			<button type="submit" class="btn btn-default btn-white">Register now</button>
+		</form>
+		<div class="slide-bar-social-icon clearfix">
+			<h6>Login on social media</h6>
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="ion ion-social-googleplus"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			</ul>
+		</div>
+		<h2 class="uppercase">have account already ?</h2>
+		<a href="#" class="btn btn-default btn-white">lOGIN	</a>
+	</div>
+</div>
+    
+
+
+
+
 	<script src="js/vendors/jquery.js"></script>
 	<script src="js/vendors/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendors/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/vendors/webslidemenu.js"></script>	
-	<script src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.matchHeight.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.sidr.min.js"></script>	 
+	<script src="js/scripts.js"></script> 
 </body>
 </html>
 

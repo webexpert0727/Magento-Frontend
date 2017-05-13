@@ -34,7 +34,8 @@
 	}
 	a{
 		font-size:0.9285em;
-		color:$text-color;;
+		color:$text-color;
+		display: block;
 		&:hover,&:focus{
 			color:$orange;
 			text-decoration:none;

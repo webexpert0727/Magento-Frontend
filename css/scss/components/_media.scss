@@ -1,0 +1,13 @@
+$largexx : 1170px;
+$large : 1024px;
+$medium : 992px;
+$xs : 767px;
+$xxs : 480px;
+
+@media only screen and (max-width:1200px){
+	.myprofile-tab-content .date-of-birth select{width:32%;}
+}
+
+@media only screen and (max-width:$medium ){
+	.shipped-address{margin-top:20px;margin-bottom:0;}
+}

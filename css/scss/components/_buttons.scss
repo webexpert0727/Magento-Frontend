@@ -41,3 +41,14 @@
 	}
 }
 
+
+.btn.btn-white{
+	background-color:#fff;  
+	color:$theme-color;
+	border-color:$theme-color;
+	&:hover, &:focus{
+			background-color:$theme-color;
+			color: #fff;
+		}
+}
+
