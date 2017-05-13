@@ -1,0 +1,112 @@
+#header {
+}
+#logo{
+	margin:0;
+	float: left;
+}
+.top_icons_row{
+	padding-top: 4px;
+	ul{
+		list-style: none; margin:0; padding:0; text-align: right;
+	}		
+	li{
+		display: inline-block; vertical-align: middle; margin-left: 12px;
+		a{
+			color: $theme-color;
+			&:hover, &:focus{
+				color: $orange;
+			}
+		}
+		i.fa-user-o{
+			font-size:2.1428em;
+		}
+		i.ion-bag{
+			font-size:2.4285em;
+		}
+		i.ion-android-favorite-outline{
+			font-size:2.7571em;
+		}
+		
+	}
+}
+#NavWrap{
+    float:right;
+    margin-top: 30px;
+    background: transparent;
+}
+
+.navbar-nav{
+	display: inline-block;
+	vertical-align: bottom;
+	 ul{
+		  list-style: none;
+		  margin:0 0 0;
+		  padding:0;
+		  text-align: right;
+	   }
+ li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 12px;
+    line-height: 22px;
+    margin-bottom: 0;
+	  a{
+	   color: $theme-color;
+	   font-weight:500;
+	   &:hover, &:focus, .active{
+	   	color: $orange;
+	   	text-decoration: none;
+	   }
+	  } 
+  }
+  .nav-stacked{
+  	text-align: left;
+  	li{
+  		display: block;
+  		margin-left: 0;
+  		text-transform: uppercase;
+  		font-size: 0.857em;
+  		margin-bottom: 15px;
+  	}
+  }
+  .sublink{
+  	ul{
+  	text-align: left;
+  	h6{
+  		font-size:0.857em;
+  		text-transform: uppercase;
+
+  	}
+  	li{
+  		display: block;
+  		line-height: 22px;
+  		margin-left: 0;
+  		a{
+  			font-weight: 400;
+  			text-transform: capitalize;
+  		}
+  	}
+  }
+  }
+}
+#search-icon{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 21px;
+	width: 240px;
+	#searchbox{
+	 .form-control{
+		border: none;
+		border-bottom: 1px solid #e0e0e0; 
+		box-shadow: none;
+		background: url(../img/search-icon.png) no-repeat right center;
+		background-size: 16px auto;
+		font-size: 0.8571em;
+		color: #424242;
+		text-transform: uppercase;
+		border-radius: 0;
+		height: 25px;
+		padding: 0;
+		}
+	}	
+}
