@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Dash Board</title>
+		<title>MY ACCOUNT MY PROFILE</title>
 		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700,800|Oswald:400,600,700" rel="stylesheet">
@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		
-	<header id="header" class="container-fluid">
+		<header id="header" class="container-fluid">
 			<div class="row">
 				<div class="container">
 					<div class=" top_icons_row">
@@ -174,12 +174,12 @@
 				<div class="container">
 					<ol class="breadcram">
 								<li><a href="javascript:;">HOME</a></li>
-								<li class="active">MY DASHBOARD</li>
+								<li><a href="javascript:;">MY ACCOUNT</a></li>
+								<li class="active">My adddress book</li>
 							</ol>
 				</div>
 			</div>
 		</section>
-		
 
 
 <section class="product-listing-wrap container-fluid content-wrap">
@@ -189,12 +189,12 @@
 				<div class="category-inner">
 					<div class="row">
 						<div class="col-sm-3">
-							<h4 class="categori-head">MY DASHBOARD</h4>
+							<h4 class="categori-head">MY ADDRESS BOOK</h4>
 							<div class="tab-panel">
 								<ul class="nav nav-tabs">
-								    <li><a href="#" >MY ACCOUNT</a></li>
+								    <li ><a href="#" >MY PROFILE</a></li>
 								    <li><a href="#" >MY ORDER</a></li>
-								    <li><a href="#" >MY ADDRESS BOOK</a></li>
+								    <li class="active"><a href="#" >MY ADDRESS BOOK</a></li>
 								    <li><a href="#" >MY CARD</a></li> 
 								    <li><a href="#" >MY WISH LIST</a></li>
 								    <li><a href="#" >CHANGE PASSWORD</a></li>
@@ -205,246 +205,101 @@
 						<div class="col-sm-9"> 
 							<div class="main-category-tab-content"> 
 							    	<div class="tab-content-text myprofile-tab-content">
-							    		<h4 class="tab-content-head">MY DASHBOARD</h4>
-							    		<div class="my-address-book-inner"> 
-												<div class="dashboard-head clearfix">
-													<p class="currently-no-add uppercase">hELLO  $ $User,</p>
-													<p class="currently-no-add">Welcome back!  Quickly navigate to the page you’re looking for with these quick links.</p>
-												</div>
-												
+							    		<h4 class="tab-content-head">MY ADDREDD BOOK</h4>
+							    		
+								    		<p class="currently-no-add">You currently have no address details saved. You can add or delete an address at any time.</p>
+								    		<div class="my-address-book-inner"> 
+												<a href="#myModal" class="btn btn-default  btn-info btn-lg" data-toggle="modal" >ADD NEW ADDRESS</a>
+												<h5>SHIPPING ADDRESS</h5>
 												<div class="row">
 													<div class="shipped-address-border clearfix">
 														<div class="col-md-6">
-															
 															<div class="shipped-address clearfix">
-																<h5>MY ADDRESS BOOK</h5>
-																<h6>xxxxxxx  xxxxxxxxxxxxx xx(Default)</h6>
+																<h6>BUSINESS (DEFAULT)</h6>
 																<ul>
-																	<li><p>xxxx x xxxxxxxltd 1st xxxx, the xxxx building </p></li>
-																	<li><p>xxx road, xxx North</p></li>
-																	<li><p>xxxx xxxx</p></li>
-																	<li><p>xx</p></li>
-																	<li><p>Mobile: XXX</p></li>
+																	<li><p>Shyju kuyiloor kavil </p></li>
+																	<li><p>analytix corporate private ltd 1st Foor, the star building</p></li>
+																	<li><p>Veekshanam road, Ernakulam North</p></li>
+																	<li><p>Ernakulam- 682018</p></li>
+																	<li><p>Kerala</p></li>
+																	<li><p>Mobile: 7558953151</p></li>
 																</ul>
 																<ul class="edit-address">
 																	<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+																	<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
 																	<li><a href="#"><i class="fa fa-check-square-o"></i>MAKE DEFAULT</a></li>
 																</ul>
 
 															</div>
-														
+															
+															<a href="#myModal2" class="add-biling-add btn-info btn-lg" data-toggle="modal">Add Billing Address</a>
 														</div>
 														<div class="col-md-6">
-															
 															<div class="shipped-address">
-																<h5>MY PROFILE</h5>
-																<h6>xxxxxxx  xxxxxxxxxxxxx xx(Default)</h6>
+																<h6>HOME</h6>
 																<ul>
-																	<li><p>xxxx x xxxxxxxltd 1st xxxx, the xxxx building </p></li>
-																	<li><p>xxx road, xxx North</p></li>
-																	<li><p>xxxx xxxx</p></li>
-																	<li><p>xx</p></li>
-																	<li><p>Mobile: XXX</p></li>
+																	<li><p>Home address</p></li>
+																	<li><p>Marina</p></li>
+																	<li><p>Sheikh Zayed Road</p></li>
+																	<li><p>Dubai - 682018</p></li>
+																	<li><p>United Arab Emirates</p></li>
+																	<li><p>Mobile: 55 6867693</p></li>
 																</ul>
 																<ul class="edit-address">
 																	<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+																	<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
+																	<li><a href="#"><i class="fa fa-check-square-o"></i>MAKE DEFAULT</a></li>
+																</ul>
+															</div>
+															</div>
+													</div>
+												</div>
+												<h5>BILLING ADDRESS</h5>
+												<div class="row">
+													<div class="shipped-address-border no-border clearfix">
+														<div class="col-md-6">
+															<div class="shipped-address clearfix">
+																<h6>BILLING ADDRESS 1</h6>
+																<ul>
+																	<li><p>BIlling Name </p></li>
+																	<li><p>Magina Plaza</p></li>
+																	<li><p>Dubai</p></li>
+																	<li><p>United Arab Emirates</p></li>
+																	
+																</ul>
+																<ul class="edit-address">
+																	<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+																	<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
+																	<li><a href="#"><i class="fa fa-check-square-o"></i>MAKE DEFAULT</a></li>
+																</ul>
+
+															</div>
+															<a href="#myModal2" class="add-biling-add btn-info btn-lg" data-toggle="modal">Add Billing Address</a>
+														</div>
+														<div class="col-md-6">
+															<div class="shipped-address">
+																<h6>BILLING ADDRESS 2</h6>
+																<ul>
+																	<li><p>Home address</p></li>
+																	<li><p>Marina</p></li>
+																	<li><p>Sheikh Zayed Road</p></li>
+																	<li><p>Dubai - 682018</p></li>
+																	<li><p>United Arab Emirates</p></li>
+																	<li><p>Mobile: 55 6867693</p></li>
+																</ul>
+																<ul class="edit-address">
+																	<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+																	<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
+																	<li><a href="#"><i class="fa fa-check-square-o"></i>MAKE DEFAULT</a></li>
 																</ul>
 															</div>
 														</div>
 													</div>
 												</div>
-											
 											</div>
+								    	
 								    	</div>		
-								    	<div class="tab-content-text myprofile-tab-content tab-cart-sub-page">
-							    			<h4 class="tab-content-head">RECENT ORDERS</h4>
-							    			<ul class="accordion clearfix">
-													<li><a href="javascript:;">
-															<div class="heading">
-																<h2 class="cart-heading">Order Number: #889756</h2>
-															</div>
-														</a>
-												<div>
-												<div class="shop_table cart single-row1 tab-content-cart">
-													<div class="header-row">
-														<div class="product-name">product name</div>
-														<div class="product-price">PRICE</div>
-														<div class="product-quantity text-center">QUANTITY</div>
-														<div class="product-subtotal text-center">TOTAL</div>
-														<div class="product-subtotal text-center"></div>
-													</div>
-							
-												<div class="content-row cart_item">
-													
-													<div class="product-name">
-														<div class="media">
-														  <div class="media-left">
-														    <a href="#">
-														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
-														    </a>
-														  </div>
-														  <div class="media-body media-middle">
-														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
-														    <h6 class="product-code">Product Code: #5555588</h6>
-														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
-														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
-														  </div>
-														</div>
-													</div>
-													<div class="product-price">
-														<span class="amount">158.5 AED</span>
-													</div>
-													<div class="product-quantity text-center">
-														<div class="quantity buttons_added">
-															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
-														</div>
-													</div>
-													<div class="product-subtotal text-center">
-														<span class="amount">158.5 AED</span>
-													</div>
-
-													
-												</div>
-
-												<div class="content-row cart_item">
-													
-													<div class="product-name">
-													
-														<div class="media">
-														  <div class="media-left">
-														    <a href="#">
-														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
-														    </a>
-														  </div>
-														  <div class="media-body media-middle">
-														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
-														    <h6 class="product-code">Product Code: #5555588</h6>
-														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
-														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
-														  </div>
-														</div>
-													</div>
-													<div class="product-price">
-														<span class="amount">$50.00</span>
-													</div>
-													<div class="product-quantity text-center">
-														<div class="quantity buttons_added">
-															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
-														</div>
-													</div>
-													<div class="product-subtotal text-center">
-														<span class="amount">$50.00</span>
-													</div>
-
-													
-												</div>
-
-											</div>
-											
-											<div class="cart-total-price clearfix">
-												<h6>Ordered On Wed, Nov 16th '16</h6>
-												<p>TOTAL ORDER: 893 aed</p>
-											</div>
-
-
-											</div>
-
-											
-
-											
-											
-											</li>
-											<li>
-												<a href="javascript:;">
-													<div class="heading">
-													<h2 class="cart-heading">Order Number: #81231</h2>
-												</div>
-											    </a>
-											    <div>
-												<div class="shop_table cart single-row1 tab-content-cart">
-													<div class="header-row">
-														<div class="product-name">product name</div>
-														<div class="product-price">PRICE</div>
-														<div class="product-quantity text-center">QUANTITY</div>
-														<div class="product-subtotal text-center">TOTAL</div>
-														<div class="product-subtotal text-center"></div>
-													</div>
-							
-												<div class="content-row cart_item">
-													
-													<div class="product-name">
-														<div class="media">
-														  <div class="media-left">
-														    <a href="#">
-														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
-														    </a>
-														  </div>
-														  <div class="media-body media-middle">
-														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
-														    <h6 class="product-code">Product Code: #5555588</h6>
-														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
-														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
-														  </div>
-														</div>
-													</div>
-													<div class="product-price">
-														<span class="amount">158.5 AED</span>
-													</div>
-													<div class="product-quantity text-center">
-														<div class="quantity buttons_added">
-															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
-														</div>
-													</div>
-													<div class="product-subtotal text-center">
-														<span class="amount">158.5 AED</span>
-													</div>
-
-													
-												</div>
-
-												<div class="content-row cart_item">
-													
-													<div class="product-name">
-													
-														<div class="media">
-														  <div class="media-left">
-														    <a href="#">
-														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
-														    </a>
-														  </div>
-														  <div class="media-body media-middle">
-														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
-														    <h6 class="product-code">Product Code: #5555588</h6>
-														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
-														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
-														  </div>
-														</div>
-													</div>
-													<div class="product-price">
-														<span class="amount">$50.00</span>
-													</div>
-													<div class="product-quantity text-center">
-														<div class="quantity buttons_added">
-															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
-														</div>
-													</div>
-													<div class="product-subtotal text-center">
-														<span class="amount">$50.00</span>
-													</div>
-
-													
-												</div>
-
-											</div>
-												
-												<div class="cart-total-price clearfix">
-													<h6>Ordered On Wed, Nov 16th '16</h6>
-													<p>TOTAL ORDER: 893 aed</p>
-												</div>
-											</div>
-											</li>
-										</ul>
-								    	</div>						    
+								    							    
 							    	</div>
 							</div>
 						</div>
@@ -458,6 +313,7 @@
 
 
 
+ 
 
 
 
@@ -534,17 +390,148 @@
 </footer>
 		
 
-		
 		<div id="stop" class="scrollTop">
     <span><a href=""><span class="fa fa-angle-up"></span></a></span>
   </div>
 		
-
 		
 
+	<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+        <h4 class="modal-title">ADD / EDIT NEW ADDRESS</h4>
+      </div>
+      <div class="modal-body tab-content-text">
+        <div class="contactwrap-inner  popup-form"> 
+
+			<form>
+				<div class="border-bottom clearfix">
+					<div class="form-group">
+						<label class="pass-label">First Name*</label>
+						<input type="text" class="form-control" name="" placeholder="Shyju" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Last Name*</label>
+						<input type="text" class="form-control" name="" placeholder="kk" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Country*</label>
+						<input type="text" class="form-control" name="" placeholder="UNITED ARAB EMIRATES" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">City*</label>
+						<input type="text" class="form-control" name="" placeholder="Dubai" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Address Line 1 (Area / Street,  Building Name) *</label>
+						<input type="text" class="form-control" name="" placeholder="XXXXXXXPlaze, " required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Address Line 1 (Apartment no. , Villa no.) *</label>
+						<input type="text" class="form-control" name="" placeholder="XXXXX" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Country*</label>
+						<input type="text" class="form-control" name="" placeholder="UNITED ARAB EMIRATES" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Mobile Number*</label>
+						<input type="email" class="form-control" name="" placeholder="+971 55 XXXXXXXX" required=""> 
+						<a href="#" class="add-new-mobile">add new mobile</a>
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Special Note <span>(optional)</span></label>
+						<input type="email" class="form-control" name="" placeholder="please deliver the product between office house bla bla bla" required=""> 
+					</div>
+					<div class="form-group">
+						<p>
+					    	<input type="checkbox" id="test2" checked="checked" />
+					    	<label for="test2" class="checkbox-label">USE THIS ADDRESS AS MY BILLING ADDRESS</label>
+					  	</p>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-default">Save</button>
+				<button type="submit" class="btn btn-default">Cancel</button>
+				<a href="#" class="make-as-default"><i class="fa fa-check-square-o"></i>Make As Default</a>
+			</form>
+		</div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+	
+
 
 		
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+        <h4 class="modal-title">ADD / EDIT NEW BILLING ADDRESS</h4>
+      </div>
+      <div class="modal-body tab-content-text">
+        <div class="contactwrap-inner  popup-form"> 
+
+			<form>
+				<div class="border-bottom clearfix">
+					<div class="form-group">
+						<label class="pass-label">First Name*</label>
+						<input type="text" class="form-control" name="" placeholder="Shyju" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Last Name*</label>
+						<input type="text" class="form-control" name="" placeholder="kk" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Country*</label>
+						<input type="text" class="form-control" name="" placeholder="UNITED ARAB EMIRATES" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">City*</label>
+						<input type="text" class="form-control" name="" placeholder="Dubai" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Address Line 1 (Area / Street,  Building Name) *</label>
+						<input type="text" class="form-control" name="" placeholder="XXXXXXXPlaze, " required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Address Line 1 (Apartment no. , Villa no.) *</label>
+						<input type="text" class="form-control" name="" placeholder="XXXXX" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Country*</label>
+						<input type="text" class="form-control" name="" placeholder="UNITED ARAB EMIRATES" required="">
+					</div>
+					<div class="form-group">
+						<label class="pass-label">Mobile Number*</label>
+						<input type="email" class="form-control" name="" placeholder="+971 55 XXXXXXXX" required=""> 
+						<a href="#" class="add-new-mobile">add new mobile</a>
+					</div>
+					
+				
+				</div>
+				<button type="submit" class="btn btn-default">Save</button>
+				<button type="submit" class="btn btn-default">Cancel</button>
+				<a href="#" class="make-as-default"><i class="fa fa-check-square-o"></i>Make As Default</a>
+			</form>
+		</div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
 
 		
 
@@ -559,8 +546,8 @@
 	<script src="js/vendors/jquery.js"></script>
 	<script src="js/vendors/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendors/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/vendors/jquery.matchHeight.js"></script>	
 	<script type="text/javascript" src="js/vendors/webslidemenu.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.matchHeight.js"></script>	
 	<script src="js/scripts.js"></script>
 	<script>
 		

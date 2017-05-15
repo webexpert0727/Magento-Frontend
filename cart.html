@@ -19,7 +19,19 @@
 					<div class=" top_icons_row">
 						<ul>
 							<li><a href="javascript:;"><i class="ion ion-android-favorite-outline"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-user-o"></i></a></li>
+							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
+								<div class="user-information">
+									<div>
+										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<ul>
+											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
+											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
+											<li><a href="javascript:;"><span class="fa fa-sign-out"></span>logout</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</li>
 							<li><a href="javascript:;"><i class="ion ion-bag"></i></a></li>
 						</ul>
 					</div>
@@ -324,13 +336,65 @@
 					    </a>
 					    <div>
 					    	<div class=" payment-wrap clearfix">
-					    		<div class="col-md-8">
-								<div class="row">
-									
+					    		<div class="col-md-7">
+									<div class="home-address clearfix">
+											<h4>SHIPPING ADDRESS</h4>
+											<div class="col-md-8">
+												<div class="row">
+												<div class="home-address-inner">
+													<ul>
+														<li><p>Shyju kuyiloor kavil </p></li>
+														<li><p>analytix corporate private ltd 1st Foor, the star building</p></li>
+														<li><p>Veekshanam road, Ernakulam North</p></li>
+														<li><p>Ernakulam- 682018</p></li>
+														<li><p>Kerala</p></li>
+														<li><p>Mobile: 7558953151</p></li>
+													</ul>
+													<ul class="edit-address">
+														<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+														<li><a href="#"><i class="fa fa-check-square-o"></i>USE THIS ADDRESS AS MY BILLING ADDRESS</a></li>
+													</ul>
+													<a href="#" class="add-ship"><span class="fa fa-plus"></span>ADD SHIPPING ADDRESS</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="select-style">
+									      	    <select name=""  id="">
+										      	  <option value="AL">Ship to - office</option>
+												  <option value="AK">Ship to - Home</option>
+									           </select>
+									      </div>
+										</div>
+									</div>
+									<div class="home-address home-address2">
+											<h4>Billing Name</h4>
+											<div class="col-md-8">
+												<div class="row">
+												<div class="home-address-inner">
+													<ul>
+														<li><p>Marina Plaza. Dubai North</p></li>
+														<li><p>United Arab Emirates</p></li>
+														<li><p>Dubai</p></li>
+														<li><p>Mobile: 7558953151</p></li>
+													</ul>
+													<ul class="edit-address">
+														<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="select-style">
+									      	    <select name=""  id="">
+										      	  <option value="AL">Billing Address</option>
+												  <option value="AK">Billing Address2</option>
+									           </select>
+									      </div>
+										</div>
+									</div>
 								</div>
-								</div>
-								<div class="col-md-4">
-								<div class="row">
+								<div class="col-md-4 pull-right">
 									<div class="order-review">
 										<h2>oRDER rEVIEW</h2>
 										<table>
@@ -353,7 +417,6 @@
 									</div>
 								</div>
 								</div>
-					    	</div>
 					    </div>
 				  </li>
 					<li>
@@ -364,13 +427,58 @@
 					    </a>
 					    <div>
 					    	<div class=" payment-wrap clearfix">
-					    		<div class="col-md-8">
-								<div class="row">
+					    		<div class="col-md-7">
+									<div id="payment" class="woocommerce-checkout-payment clearfix">
+						<ul class="wc_payment_methods payment_methods methods">
+							<li class="wc_payment_method credit_card_block">
+								<input id="payment_method_intuit_qbms" type="radio" class="input-radio" name="payment_method" value="" checked="checked">
+								<label for="payment_method_intuit_qbms" class="main_Label">
+									Credit Card 
 									
+								</label>
+								<div class="check"></div>
+					</li>
+					<li class="wc_payment_method payment_method_paypal">
+						<input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" data-order_button_text="Proceed to PayPal">
+
+						<label for="payment_method_paypal" class="main_Label">
+							paypal
+	
+						</label>
+						<div class="check"></div>
+						<div class="payment_box payment_method_intuit_qbms">
+										<div>
+											<div class="form-group">
+												<label for="NameOnCard">NAME ON CARD</label>
+												<input type="text" class="form-control" placeholder="NAME ON CARD">
+											</div>
+											<div class="form-group">
+												<label for="NameOnCard">CREDIT CARD NUMBER</label>
+												<input type="text" class="form-control" maxlength="19" autocomplete="off" value="">
+												
+											</div>
+											<div class="form-group">
+												<div class="row">
+													<div class="col-md-6">
+														<label for="wc-intuit-qbms-account-number">EXPIRY <span class="required">*</span></label>
+														<input type="text" class="form-control" placeholder="MM/YY">
+													</div>
+													<div class="col-md-6">
+														<label for="wc-intuit-qbms-exp-month">cvv <span class="required">*</span></label>
+															<input type="text" class="form-control" placeholder="6666">
+													</div>
+												</div>
+											</div>
+										<div class="clear"></div>
+									</div>
+					</li>
+				</ul>
+					
+			</div>
+								
 								</div>
-								</div>
-								<div class="col-md-4">
-								<div class="row">
+
+								<div class="col-md-4 pull-right">
 									<div class="order-review">
 										<h2>oRDER rEVIEW</h2>
 										<table>
@@ -393,7 +501,6 @@
 									</div>
 								</div>
 								</div>
-					    	</div>
 					    </div>
 				  </li>
 				</ul>
@@ -475,6 +582,10 @@
 	  </div>
 	 </div>
 </footer>
+<div id="stop" class="scrollTop">
+    <span><a href=""><span class="fa fa-angle-up"></span></a></span>
+  </div>
+
 
 	<script src="js/vendors/jquery.js"></script>
 	<script src="js/vendors/bootstrap.min.js"></script>
@@ -485,3 +596,99 @@
 </body>
 </html>
 
+
+
+<div class=" top_icons_row">
+						<ul>
+							<li><a href="javascript:;"><i class="ion ion-android-favorite-outline"></i></a></li>
+							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
+								<div class="user-information">
+									<div>
+										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<ul>
+											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
+											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
+											<li><a href="javascript:;"><span class="fa fa-sign-out"></span>logout</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</li>
+							<li class="user1"><a href="javascript:;"><i class="ion ion-bag"></i></a>
+								<div class="user-information1">
+									<div>
+										<div class="shop_table cart single-row1 home-cart-view">
+										  
+					
+										<div class="content-row cart_item">
+											
+											<div class="product-name">
+												<div class="media">
+												  <div class="media-left">
+												    <a href="#">
+												      <img class="media-object" src="img/cart-thumb5.jpg" height="61" width="46" alt="...">
+												    </a>
+												  </div>
+												  <div class="media-body media-middle">
+												    <h5 class="media-heading">aldo leather shoes</h5>
+												   <div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<h6>QTY</h6>
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+												  </div>
+												</div>
+											</div>
+											
+											
+											<div class="product-subtotal text-center">
+												<span class="amount">158.5 AED</span>
+											</div>
+
+											<div class="product-delete">
+												<a href="javascript:;"><span class="ion ion-close"></span></a>
+												<a href="javascript:;"><span class="ion-edit"></span></a>
+											</div>
+										</div>
+
+										<div class="content-row cart_item">
+											
+											<div class="product-name">
+												<div class="media">
+												  <div class="media-left">
+												    <a href="#">
+												      <img class="media-object" src="img/cart-thumb5.jpg" height="61" width="46" alt="...">
+												    </a>
+												  </div>
+												  <div class="media-body media-middle">
+												    <h5 class="media-heading">aldo leather shoes</h5>
+												   <div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<h6>QTY</h6>
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+												  </div>
+												</div>
+											</div>
+											
+											
+											<div class="product-subtotal text-center">
+												<span class="amount">158.5 AED</span>
+											</div>
+
+											<div class="product-delete">
+												<a href="javascript:;"><span class="ion ion-close"></span></a>
+												<a href="javascript:;"><span class="ion-edit"></span></a>
+											</div>
+										</div>
+
+									</div>
+
+					</div>
+								</div>
+				
+							</li>
+						</ul>
+					</div>

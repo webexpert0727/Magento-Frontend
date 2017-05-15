@@ -244,7 +244,6 @@
     }
 .shipped-address-border{
     padding-bottom:40px;
-    border-bottom:1px solid #cccccc;
 }
 .no-border{
     border:none;
@@ -333,7 +332,7 @@
   position: absolute;
   left: 0; top: 0;
   width: 12px; height: 13px;
-  border: 1px solid #666666;
+  border: 1px solid $text-color;
   background: #fff;
 }
 /* checked mark aspect */
@@ -344,7 +343,7 @@
   top: 0px; left: 2px;
   font-size: 1em;
   line-height: 0.8;
-  color: #666666;
+  color: $text-color;
   transition: all .2s;
   font-family:'FontAwesome';
 }
@@ -359,7 +358,7 @@
 }
 .checkbox-label{
     font-size:0.928em;
-    color:#666666;
+    color:$text-color;
     text-transform:uppercase;
     line-height:1;
     font-weight:500;
@@ -400,3 +399,168 @@
 .new-card-popup{
     padding-bottom:10px;
 }
+
+
+
+
+.tab-content-cart.single-row1{
+    .header-row{
+         .product-name{
+            padding-left:0;
+            h5{
+                font-size:1.142em;
+                font-weight:300;
+                
+            }
+        }
+    }
+    .content-row {
+        div{
+            padding-left:0;
+            padding-right:0;
+        }
+        .media .media-body{
+            padding-left:20px;
+        }
+        .product-name{
+            padding-left:0;
+            h5{
+              text-transform:capitalize;  
+            }
+            } 
+        }
+}
+
+
+.wish-list-edit{
+    ul{
+        padding-left:0;
+        margin-top:5px;
+        display:inline-block;
+        li{
+            display:inline-block;
+            list-style:none;
+            padding-right:12px;
+            margin-right:12px;
+            border-right:1px solid #404040;
+            line-height:1;
+            &:last-child{
+                border:none;
+            }
+        }
+        a{
+            display:block;
+            font-size:0.857em;
+            color:#404040;
+             line-height:1;
+             text-transform:uppercase;
+             &:hover,&:focus{
+            text-decoration:none;
+            color:$orange;
+        }
+             i{
+                margin-right:5px;
+             }
+        }
+    }
+    .wish-list-add-cart{
+        text-transform:uppercase;
+        font-size:1em;
+        color:$theme-color;
+        font-weight:700;
+        i{
+            margin-right:7px;
+        }
+        &:hover,&:focus{
+            text-decoration:none;
+            color:$orange;
+        }
+    }
+}
+.load-more-button{
+    border:1px solid #000;
+    font-size:1em;
+    text-transform:uppercase;
+    color:$theme-color;
+    font-weight:700;
+    padding:15px 30px;
+    display:block;
+    text-align:center;
+    margin:50px auto 0;
+    max-width:200px;
+     &:hover,&:focus{
+            text-decoration:none;
+            color:$orange;
+        }
+}
+
+.tab-cart-sub-page{
+    ul{
+        padding-left:0;
+    }
+    li{
+        list-style:none;
+    }
+    .heading{
+        margin-top:0px;
+        .cart-heading{
+            color:#3e3e3e;
+            font-size:0.857em;
+            border-color:#cccccc;
+        }
+    }
+    
+}
+.shop_table.cart.single-row1.tab-content-cart{
+    margin-bottom:0;
+}
+.accordion{
+    padding-left:0;
+    li{
+        list-style:none;
+    }
+    a{
+        &:hover,&:focus{
+            text-decoration:none;
+        }
+    }
+}
+
+.cart-total-price{
+        border-bottom:1px solid #e6e6e6;
+        padding-top:15px;
+        padding-bottom:15px;
+        margin-bottom:30px;
+        h6{
+            text-transform:uppercase;
+            float:left;
+            color:#676767;
+            font-size:0.857em;
+            margin:0;
+            padding-left:15px;
+            font-weight:500;
+        }
+        p{
+            text-transform:uppercase;
+            float:right;
+            color:#e00000;
+            font-size:0.857em;
+            margin:0;
+            font-weight:500;
+        }
+    }
+
+    .my-address-book-inner{
+        border-bottom:1px solid #ccc;
+        margin-bottom:12px;
+    }
+
+    .product-size {
+        .form-group{
+            line-height:0.6;
+        }
+    }
+
+    .myprofile-tab-content .date-of-birth select{
+        display:inline-block;
+    }

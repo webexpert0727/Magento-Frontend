@@ -23,7 +23,7 @@
 													
 				$.each($ul.find('ul, li>div'), function(){
 					$(this).data('accordiated', true);
-					//$(this).hide();
+					$(this).hide();
 				});
 				
 				$.each($ul.find('a'), function(){

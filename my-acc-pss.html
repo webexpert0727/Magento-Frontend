@@ -18,7 +18,19 @@
 					<div class=" top_icons_row">
 						<ul>
 							<li><a href="javascript:;"><i class="ion ion-android-favorite-outline"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-user-o"></i></a></li>
+							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
+								<div class="user-information">
+									<div>
+										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<ul>
+											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
+											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
+											<li><a href="javascript:;"><span class="fa fa-sign-out"></span>logout</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</li>
 							<li><a href="javascript:;"><i class="ion ion-bag"></i></a></li>
 						</ul>
 					</div>
@@ -75,10 +87,10 @@
 								    
 
 								    <li role="presentation" ><a href="#my-acc" aria-controls="my-acc" role="tab" data-toggle="tab">MY ACCOUNT</a></li>
-								    <li role="presentation"><a href="#my-order" aria-controls="my-order" role="tab" data-toggle="tab">MY ORDER</a></li>
+								    <li role="presentation" class="active"><a href="#my-order" aria-controls="my-order" role="tab" data-toggle="tab">MY ORDER</a></li>
 								    <li role="presentation" ><a href="#my-add-book" aria-controls="my-add-book" role="tab" data-toggle="tab">MY ADDRESS BOOK</a></li>
-								    <li role="presentation" class="active"><a href="#my-cart" aria-controls="my-cart" role="tab" data-toggle="tab">MY CARD</a></li> 
-								    <li role="presentation"><a href="#my-wish-list" aria-controls="my-wish-list" role="tab" data-toggle="tab">MY WISH LIST</a></li>
+								    <li role="presentation" ><a href="#my-cart" aria-controls="my-cart" role="tab" data-toggle="tab">MY CARD</a></li> 
+								    <li role="presentation" ><a href="#my-wish-list" aria-controls="my-wish-list" role="tab" data-toggle="tab">MY WISH LIST</a></li>
 								    <li role="presentation" ><a href="#change-pass" aria-controls="change-pass" role="tab" data-toggle="tab">CHANGE PASSWORD</a></li>
 								    <li role="presentation"><a href="#log-out" aria-controls="log-out" role="tab" data-toggle="tab">LOGOUT</a></li> 
 								  </ul>
@@ -300,8 +312,202 @@
 								    	</div>
 
 								    </div>
-								    <div role="tabpanel" class="tab-pane" id="my-order">..2.</div>
+								    <div role="tabpanel" class="tab-pane active" id="my-order">
+								    	
+								    	<div class="tab-content-text tab-cart-sub-page">
+								    		<h4 class="tab-content-head">MY Order</h4>
+												<ul class="accordion clearfix">
+													<li><a href="javascript:;">
+															<div class="heading">
+																<h2 class="cart-heading">Order Number: #889756</h2>
+															</div>
+														</a>
+												<div>
+												<div class="shop_table cart single-row1 tab-content-cart">
+													<div class="header-row">
+														<div class="product-name">product name</div>
+														<div class="product-price">PRICE</div>
+														<div class="product-quantity text-center">QUANTITY</div>
+														<div class="product-subtotal text-center">TOTAL</div>
+														<div class="product-subtotal text-center"></div>
+													</div>
+							
+												<div class="content-row cart_item">
+													
+													<div class="product-name">
+														<div class="media">
+														  <div class="media-left">
+														    <a href="#">
+														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
+														    </a>
+														  </div>
+														  <div class="media-body media-middle">
+														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
+														    <h6 class="product-code">Product Code: #5555588</h6>
+														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
+														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
+														  </div>
+														</div>
+													</div>
+													<div class="product-price">
+														<span class="amount">158.5 AED</span>
+													</div>
+													<div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+													<div class="product-subtotal text-center">
+														<span class="amount">158.5 AED</span>
+													</div>
+
+													
+												</div>
+
+												<div class="content-row cart_item">
+													
+													<div class="product-name">
+													
+														<div class="media">
+														  <div class="media-left">
+														    <a href="#">
+														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
+														    </a>
+														  </div>
+														  <div class="media-body media-middle">
+														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
+														    <h6 class="product-code">Product Code: #5555588</h6>
+														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
+														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
+														  </div>
+														</div>
+													</div>
+													<div class="product-price">
+														<span class="amount">$50.00</span>
+													</div>
+													<div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+													<div class="product-subtotal text-center">
+														<span class="amount">$50.00</span>
+													</div>
+
+													
+												</div>
+
+											</div>
+											
+											<div class="cart-total-price clearfix">
+												<h6>Ordered On Wed, Nov 16th '16</h6>
+												<p>TOTAL ORDER: 893 aed</p>
+											</div>
+
+
+											</div>
+
+											
+
+											
+											
+											</li>
+											<li>
+												<a href="javascript:;">
+													<div class="heading">
+													<h2 class="cart-heading">Order Number: #81231</h2>
+												</div>
+											    </a>
+											    <div>
+												<div class="shop_table cart single-row1 tab-content-cart">
+													<div class="header-row">
+														<div class="product-name">product name</div>
+														<div class="product-price">PRICE</div>
+														<div class="product-quantity text-center">QUANTITY</div>
+														<div class="product-subtotal text-center">TOTAL</div>
+														<div class="product-subtotal text-center"></div>
+													</div>
+							
+												<div class="content-row cart_item">
+													
+													<div class="product-name">
+														<div class="media">
+														  <div class="media-left">
+														    <a href="#">
+														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
+														    </a>
+														  </div>
+														  <div class="media-body media-middle">
+														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
+														    <h6 class="product-code">Product Code: #5555588</h6>
+														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
+														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
+														  </div>
+														</div>
+													</div>
+													<div class="product-price">
+														<span class="amount">158.5 AED</span>
+													</div>
+													<div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+													<div class="product-subtotal text-center">
+														<span class="amount">158.5 AED</span>
+													</div>
+
+													
+												</div>
+
+												<div class="content-row cart_item">
+													
+													<div class="product-name">
+													
+														<div class="media">
+														  <div class="media-left">
+														    <a href="#">
+														      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
+														    </a>
+														  </div>
+														  <div class="media-body media-middle">
+														    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
+														    <h6 class="product-code">Product Code: #5555588</h6>
+														    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
+														    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
+														  </div>
+														</div>
+													</div>
+													<div class="product-price">
+														<span class="amount">$50.00</span>
+													</div>
+													<div class="product-quantity text-center">
+														<div class="quantity buttons_added">
+															<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+														</div>
+													</div>
+													<div class="product-subtotal text-center">
+														<span class="amount">$50.00</span>
+													</div>
+
+													
+												</div>
+
+											</div>
+												
+												<div class="cart-total-price clearfix">
+													<h6>Ordered On Wed, Nov 16th '16</h6>
+													<p>TOTAL ORDER: 893 aed</p>
+												</div>
+											</div>
+											</li>
+										</ul>
+					
+									</div>
+								
+								</div>
 								    <div role="tabpanel" class="tab-pane " id="my-add-book">
+
 								    	<div class="tab-content-text my-address-book">
 								    		<h4 class="tab-content-head">MY ADDRESS BOOK</h4>
 								    		<p class="currently-no-add">You currently have no address details saved. You can add or delete an address at any time.</p>
@@ -396,9 +602,8 @@
 											</div>
 								    	</div>
 
-
 								    </div>
-								    <div role="tabpanel" class="tab-pane active" id="my-cart">
+								    <div role="tabpanel" class="tab-pane " id="my-cart">
 								    	<div class="tab-content-text my-address-book">
 								    		<h4 class="tab-content-head">MY CARD</h4>
 								    		<p class="currently-no-add">You have no saved cards.</p>
@@ -434,7 +639,66 @@
 								    	</div>
 
 								    </div>
-								    <div role="tabpanel" class="tab-pane" id="my-wish-list">..5.</div>
+								    <div role="tabpanel" class="tab-pane " id="my-wish-list">
+								    	<div class="tab-content-text">
+								    		<h4 class="tab-content-head">MY WISH LIST</h4>
+												<div> 
+													<div class="shop_table cart single-row1 tab-content-cart">
+														<div class="header-row">
+															<div class="product-name">product name</div>
+															<div class="product-price">PRICE</div>
+															<div class="product-quantity text-center">QUANTITY</div>
+															<div class="product-subtotal text-center">TOTAL</div>
+															<div class="product-subtotal text-center"></div>
+														</div>
+								
+													<div class="content-row cart_item">
+														
+														<div class="product-name">
+															<div class="media">
+															  <div class="media-left">
+															    <a href="#">
+															      <img class="media-object" src="img/cart-thumb.jpg" height="133" width="100" alt="...">
+															    </a>
+															  </div>
+															  <div class="media-body media-middle">
+															    <h5 class="media-heading"><b>NIKE</b> - White Beard T-Shirt</h5>
+															    <h6 class="product-code">Product Code: #5555588</h6>
+															    <p><span class="fa fa-angle-right"></span>  Color : <span>White</span></p>
+															    <p><span class="fa fa-angle-right"></span>  Size : <span>XL</span></p>
+															    <div class="wish-list-edit">
+															    	<ul>
+															    		<li><a href="#"><i class="fa fa-pencil"></i>Edit</a></li>
+															    		<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
+															    	</ul>
+															    	<a href="#" class="wish-list-add-cart"><i class="fa fa-plus" ></i>Add to Cart</a>  
+															    </div> 
+															  </div>
+															</div>
+														</div>
+														<div class="product-price">
+															<span class="amount">158.5 AED</span>
+														</div>
+														<div class="product-quantity text-center">
+															<div class="quantity buttons_added">
+																<input type="text" min="1" name="cart" value="1" title="Qty" class="form-control" maxlegth="2">
+															</div>
+														</div>
+														<div class="product-subtotal text-center">
+															<span class="amount">158.5 AED</span>
+														</div>
+
+														
+													</div>
+
+													
+
+												</div>
+<a href="#" class="load-more-button">Load More</a>
+												</div>
+								    	</div>
+
+								    </div>
 								    <div role="tabpanel" class="tab-pane " id="change-pass">
 								    	
 								    	<div class="tab-content-text">
@@ -720,7 +984,9 @@
 </footer>
 		
 
-		
+	<div id="stop" class="scrollTop">
+    <span><a href=""><span class="fa fa-angle-up"></span></a></span>
+  </div>	
 		
 		
 

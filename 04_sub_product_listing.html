@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700,800|Oswald:400,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="css/webslidemenu.css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">    
 	</head>
 	<body>
@@ -19,11 +20,23 @@
 					<div class=" top_icons_row">
 						<ul>
 							<li><a href="javascript:;"><i class="ion ion-android-favorite-outline"></i></a></li>
-							<li><a href="javascript:;"><i class="fa fa-user-o"></i></a></li>
+							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
+								<div class="user-information">
+									<div>
+										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<ul>
+											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
+											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
+											<li><a href="javascript:;"><span class="fa fa-sign-out"></span>logout</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</li>
 							<li><a href="javascript:;"><i class="ion ion-bag"></i></a></li>
 						</ul>
 					</div>
-					<div class="header_main_row">
+					<div class="header_main_row wsdownmenu">
 						<h1 id="logo">
 							<a href="javascript:;">
 								<img src="img/logo.png" width="339" class="img-responsive" alt="logo">
@@ -37,10 +50,108 @@
 						         <span class="icon-bar"></span>
 						    </button>
             			</div>
-            			<div class="collapse navbar-collapse" id="NavWrap">
+            			<div class="" id="NavWrap">
 							<nav id="main" class="nav navbar-nav">
-								<ul>
-									<li><a href="javascript:;">MEN</a></li>
+								<ul class="wsdown-mobile wsdownmenu-list">>
+									<li><a href="javascript:;">MEN</a>
+										<div class="megamenu clearfix">
+											<div class="first-tab clearfix">
+												<ul class="col-md-3 nav-stacked">
+													<li><a href="#tab1" class="active">Clothing</a></li>
+													<li><a href="#tab2">Accessories</a></li>
+													<li><a href="#tab3">Shoes</a></li>
+												</ul>
+												<div class="tab-content col-md-9">
+													<div class="tab-pane active" id="tab1">
+														<div class="col-md-6">
+															<div class="sublink">
+																<ul class="menu-list">
+																	<h6>Clothing</h6>
+																	<li><a href="javascript:;" data-src="img/men.jpg">Big &amp; Tall(filter)</a></li>
+																	<li><a href="javascript:;" data-src="img/men2.jpg">Hoodies &amp; Sweatshirts</a></li>
+																	<li><a href="javascript:;">Jeans</a></li>
+																	<li><a href="javascript:;">Outerwear</a></li>
+																	<li><a href="javascript:;">Pants</a></li>
+																	<li><a href="javascript:;">Polo Shirts</a></li>
+																	<li><a href="javascript:;">Shirts</a></li>
+																	<li><a href="javascript:;">Shorts</a></li>
+																	<li><a href="javascript:;">Sleepwear</a></li>
+																	<li><a href="javascript:;" class="active">Sportswear</a></li>
+																	<li><a href="javascript:;">Suits &amp; Blazers</a></li>
+																	<li><a href="javascript:;">Sweaters &amp; Cardigans</a></li>
+																	<li><a href="javascript:;">Swimwear</a></li>
+																</ul>
+															</div>
+														</div>
+								                       <div class="col-md-6">
+								                       	<div class="img-part">
+								                       		<img src="" class="img-responsive">
+								                       </div>
+								                       </div>
+								                       
+								                    </div>
+								                    <div class="tab-pane " id="tab2">
+								                    	<div class="col-md-6">
+															<div class="sublink">
+																<ul class="menu-list">
+																	<h6>accessories</h6>
+																	<li><a href="javascript:;" data-src="img/men.jpg">Big &amp; Tall(filter)</a></li>
+																	<li><a href="javascript:;" data-src="img/men2.jpg">Hoodies &amp; Sweatshirts</a></li>
+																	<li><a href="javascript:;">Jeans</a></li>
+																	<li><a href="javascript:;">Outerwear</a></li>
+																	<li><a href="javascript:;">Pants</a></li>
+																	<li><a href="javascript:;">Polo Shirts</a></li>
+																	<li><a href="javascript:;">Shirts</a></li>
+																	<li><a href="javascript:;">Shorts</a></li>
+																	<li><a href="javascript:;">Sleepwear</a></li>
+																	<li><a href="javascript:;" class="active">Sportswear</a></li>
+																	<li><a href="javascript:;">Suits &amp; Blazers</a></li>
+																	<li><a href="javascript:;">Sweaters &amp; Cardigans</a></li>
+																	<li><a href="javascript:;">Swimwear</a></li>
+																</ul>
+															</div>
+														</div>
+								                       <div class="col-md-6">
+								                       	<div class="img-part">
+								                       		<img src="" class="img-responsive">
+								                       </div>
+								                       </div>
+								                    </div>
+								                    <div class="tab-pane " id="tab3">
+								                    	<div class="col-md-6">
+															<div class="sublink">
+																<ul class="menu-list">
+																	
+																	<h6>Shoes</h6>
+																	<li><a href="javascript:;" data-src="img/men.jpg">Big &amp; Tall(filter)</a></li>
+																	<li><a href="javascript:;" data-src="img/men2.jpg">Hoodies &amp; Sweatshirts</a></li>
+																	<li><a href="javascript:;">Jeans</a></li>
+																	<li><a href="javascript:;">Outerwear</a></li>
+																	<li><a href="javascript:;">Pants</a></li>
+																	<li><a href="javascript:;">Polo Shirts</a></li>
+																	<li><a href="javascript:;">Shirts</a></li>
+																	<li><a href="javascript:;">Shorts</a></li>
+																	<li><a href="javascript:;">Sleepwear</a></li>
+																	<li><a href="javascript:;" class="active">Sportswear</a></li>
+																	<li><a href="javascript:;">Suits &amp; Blazers</a></li>
+																	<li><a href="javascript:;">Sweaters &amp; Cardigans</a></li>
+																	<li><a href="javascript:;">Swimwear</a></li>
+																</ul>
+															</div>
+														</div>
+								                       <div class="col-md-6">
+								                       	<div class="img-part">
+								                       		<img src="" class="img-responsive">
+								                       </div>
+								                       </div>
+
+								                       
+								                       
+								                    </div>
+												</div>
+											</div>
+                                        </div>
+									</li>
 									<li><a href="javascript:;">WOMEN</a></li>
 									<li><a href="javascript:;">KIDS</a></li>
 									<li><a href="javascript:;">BEAUTY</a></li>
@@ -59,6 +170,19 @@
 				</div>
 			</div>
 		</header>
+
+		<section class="container-fluid">
+			<div class="row">
+				<div class="container">
+					<ol class="breadcram">
+								<li><a href="javascript:;">HOME</a></li>
+								<li><a href="javascript:;">MEN</a></li>
+								<li><a href="javascript:;">clothing</a></li>
+								<li class="active">SHIRTS</li>   
+							</ol>
+				</div>
+			</div>
+		</section>
 		
 
 
@@ -205,8 +329,444 @@
 										<li><h6>YELLOW<a href="#"><i class="fa fa-times"></i></a></h6></li>
 									</ul>
 								</div>
+
+								<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap"> 
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+					  			<div class=" col-md-3">
+									<div class="singlerating">
+										<div class="singlerating-inner">
+											<a href="javascript:;"><span class="ion ion-android-favorite-outline"></span></a>
+											<div class="img-wrap">
+										     <img src="img/product-img.jpg" height="357" width="267" alt="" class="img-responsive">
+									     </div>
+									     <div class="size-selection show-size">
+											<ul>
+												<li>
+													<input type="radio" value="xs" name="size" id="xs" >
+													<label for="xs">xs</label>
+												</li>
+												<li>
+													<input type="radio" value="xxs" name="size" id="xxs" >
+													<label for="xxs">xxs</label>
+												</li>
+												<li>
+													<input type="radio" value="90" name="size" id="90" >
+													<label for="90">90</label>
+												</li>
+												<li>
+													<input type="radio" value="s" name="size" id="s" >
+													<label for="s">s</label>
+												</li>
+												<li>
+													<input type="radio" value="m" name="size" id="m" >
+													<label for="m">m</label>
+												</li>
+												<li>
+													<input type="radio" value="19" name="size" id="19" >
+													<label for="19">19</label>
+												</li>
+											</ul>
+										</div>
+									 </div>
+									<div class="rating-wrap">
+										<h5>NIKE</h5>
+									    <h6 class="ellipsis">Freida Basic Strappy  Bodycon Dr...</h6>
+										<div class="rate">
+										 <p>2,000.95 AED <span>$2,150.95 </span></p>
+										</div>
+										<div class="add-card">
+										 <div class="add">
+											<ul class="clearfix">
+												<li><a href="javascript;:"><span class="fa fa-eye"></span></a></li>
+												<li><a href="javascript:;"><span class="ion ion-bag"></span></a></li>
+											</ul>
+										 </div>
+										</div>
+										</div>
+
+								   </div>
+					  			</div>
+
+
 								
 							</div>
+							<a href="#" class="load-more-button">Load More</a>
 						</div>
 					</div>
 				</div>
@@ -290,7 +850,9 @@
 		
 
 		
-		
+<div id="stop" class="scrollTop">
+    <span><a href=""><span class="fa fa-angle-up"></span></a></span>
+  </div>		
 		
 
 		
@@ -312,6 +874,8 @@
 	<script src="js/vendors/jquery.js"></script>
 	<script src="js/vendors/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendors/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/vendors/webslidemenu.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.dotdotdot.min.js"></script>
 	<script type="text/javascript" src="js/vendors/jquery.matchHeight.js"></script>	
 	<script src="js/scripts.js"></script>
 	<script>
