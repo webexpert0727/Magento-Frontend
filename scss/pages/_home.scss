@@ -1,6 +1,6 @@
 #banner{
 	position: relative;
-	margin-top: 15px;
+	
 	width: 100%;
 	max-height: 590px;  
 	.item{
@@ -172,6 +172,9 @@
 		font-size: 0.8571em;
 		font-weight: 400;
 		margin-bottom: 0;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 	}
 	.rate{
 		font-size: 1em;
@@ -425,16 +428,118 @@
 
 .user1{
 	position: relative;
+	.cart-product{
+		position:absolute;
+		top:20px;
+		left:-5px;
+		width:20px;
+		height:20px;
+		line-height:20px;
+		border-radius:50%;
+		background:$orange;
+		color:#fff;
+		text-align:center;
+	}
 	.user-information1{
 		border: 1px solid #eeeeee;
-		display: none; 
-		background: #fff;
+		display: none;  
+		background: #fff;    
 		padding:0px 15px 15px 20px;
 		position: absolute;
 		top:40px;
 		z-index: 99;
 		right: 0;
 		text-align:left;
-		max-width:385px;		
+		max-width:385px;
+		width:385px;		
 	}
 }
+
+.cart-preview{
+	.cart-sub-total {
+		padding-bottom:20px;
+		margin-bottom:15px;
+		border-bottom:1px solid #e5e5e5;
+	}
+	text-align:right;
+	p{
+		display:inline-block;
+		margin-left:50px;
+		margin-top:0;
+		margin-bottom:0;
+	}
+	float:right;
+	.conform-btn{
+		.btn-default{
+			padding:12px 20px;
+			line-height:2;
+			text-transform:uppercase;
+			&:hover,&:focus{
+			text-decoration:none;
+			background:$orange;
+			border-color:$orange;
+		}
+		}
+	}
+	.sub-total{
+		font-size:1em;
+		text-transform:uppercase;
+		color:$theme-color;
+		font-family:$font-family-3;
+		font-weight:700;
+	}
+	.sub-price{
+		color:#ff9400;
+		font-size:1.285em;
+	}
+	.view-cart{
+		font-size:0.928em;
+		text-transform:uppercase;
+		color:$theme-color;
+		margin-right:45px;
+		&:hover,&:focus{
+			text-decoration:none;
+			color:$orange;
+		}
+	}
+}
+
+.megamenu{
+	border: none;
+	background-color: transparent;
+	padding-bottom: 0;
+	.first-tab{
+		max-width: 750px;
+		width: 100%;
+		margin: 0 auto;
+		background: #fff;
+		border: 1px solid $border-color;
+		padding: 15px;
+		.tab-content{border-left:1px solid #d3d3d3;}
+	}
+
+}
+.navbar-nav .nav-stacked li{
+		position: relative;
+		&::after{
+		    content: "";
+		    width: 12px;
+		    height: 12px;
+		    background: #fff;
+		    display: block;
+		    right: -7px;
+		    top: 50%;
+		    margin-top: -6px;
+		    border-top: 1px solid #d3d3d3;
+		    border-right: 1px solid #d3d3d3;
+		    @include prefix(transform, rotate(45deg), webkit moz ms o);
+		    position: absolute;
+		    z-index: 3;
+		    opacity: 0;
+		}
+		&.active::after{opacity: 1}
+	}
+
+  // #banner{
+  // 	padding-top:125px;
+  // }

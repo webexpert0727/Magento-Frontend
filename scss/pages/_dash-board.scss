@@ -14,3 +14,7 @@
 .tab-content-head,.categori-head{
 	font-weight:500;
 }
+.nav > li > a:hover, .nav > li > a:focus{
+	background: none;
+	color: $orange;
+}

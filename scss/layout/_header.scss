@@ -89,6 +89,14 @@
   }
   }
 }
+
+#main{
+  li{
+    a{
+      font-size:1em;
+    }
+  }
+}
 #search-icon{
 	display: inline-block;
 	vertical-align: bottom;
@@ -143,5 +151,21 @@
     }
     
   }
+}  
 
+
+
+#header{
+  padding-bottom:15px;
+  
 }
+    .shrink{
+
+  box-shadow:0 0 10px #e9e9e9;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:99;
+  background:#fff;
+    }

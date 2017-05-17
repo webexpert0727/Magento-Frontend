@@ -20,9 +20,14 @@
 .add-biling-add.cont-shopping{
 	float:right;
 	margin-top:75px;
+	border: 1px solid #ccc;
+	padding: 15px 21px;
+	line-height: 1;
+	@include transition(all 0.5s ease);
 }
 
 .thankyou-right{
+	 border-bottom: none;
 	h5{
 		font-size:1em;
 		color:#252525;
@@ -35,8 +40,36 @@
 		margin-bottom:0;
 		padding:0;
 		ul{
+
 			p{
 				margin:0;
+			}
+		}
+	}
+	table{
+		border-top: 1px solid #ccc;
+	}
+	.first-row{
+		td{
+			font-size: 1em;
+			font-weight: 400;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			&:last-child{
+				padding-left: 7px;
+			}
+		}
+	}
+	.sec-row{
+		 border-top: 1px solid #ccc;
+		td{
+			font-size: 1em;
+			font-weight: 500;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-transform: uppercase;
+			&:last-child{
+				padding-left: 7px;
 			}
 		}
 	}
