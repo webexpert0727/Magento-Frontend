@@ -12,6 +12,9 @@
                     content:"\f105";
                     font-family:'FontAwesome'
                 }
+                a{
+                    font-size:0.923em;
+                }
             }
         }
         .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
@@ -75,6 +78,7 @@
          .form-control:focus{
             background:#f6f6f6;
             border-color:#f6f6f6;
+            box-shadow:none;
          }
         }
         .date-of-birth{
@@ -82,21 +86,62 @@
                 width:100%;
             }
             select{
-                width:32.66%;
+                width:100%;
+                display:block;
                 height:50px;
                 border-color:#eee;
                 color:#3f3f3f;
                 font-size:1em;
                 font-family:$font-family-primary;
+                -webkit-appearance:none;
+                -moz-appearance:none;
+                -ms-appearance:none;
+                -o-appearance:none;
+                position:relative;
+                background:transparent;
+                &:after{
+                    content:"\f107";   
+                    display:block;
+                    position:absolute;
+                    top:50%;
+                    right:0;
+                    font-family:'FontAwesome';
+                    font-size:20px;
+                    color:#000;
+
+                }
+
                 &:focus{
                     border-color:#eee;
                     outline:none;
                 }
             }
+            .select-style1{
+                font-weight: 300;
+                vertical-align: middle;
+                margin: 0;
+                border-radius: 0px;
+                overflow: hidden;
+                background-color: #fff;
+                background: #fff url(../img/arrow.svg) no-repeat 94% 53%;
+                background-size: 11px auto;
+                text-align: left;
+                display:inline-block;
+                width:32.66%;
+            }
         }
     }
 
 .custom-radio-button {
+
+    .main-border{
+        width:9px;
+        height:9px;
+        border-radius:50%;
+        border:1px solid #b5b5b5;
+        margin-right:3px;
+
+    }
     div{
         display:inline-block;
         margin-right:50px;
@@ -114,14 +159,16 @@
     }
     input[type="radio"] + label span {
         display:inline-block;
-        width:12px;
-        height:12px;
-        margin:-1px 4px 0 0;
+        width:8px;
+        height:8px;
+        margin:-1px 8px 0 0;
         vertical-align:middle;
         cursor:pointer;
         -moz-border-radius:  50%;
         border-radius:  50%;
-        border:1px solid #b5b5b5;
+        position:relative;
+        top:-1.5px;
+        left:3.5px;
     }
 
     input[type="radio"] + label span {
@@ -129,8 +176,7 @@
     }
 
     input[type="radio"]:checked + label span{
-         background-color:$orange;
-         border:1px solid $orange;
+         background-color:#000;
     }
 
     input[type="radio"] + label span,
@@ -171,7 +217,7 @@
         margin-bottom:20px;
         padding-bottom:10px;
         border-bottom:1px solid #cccccc;
-        max-width:220px;
+        max-width:220px !important;
     }
 }
 .shipped-address{
@@ -218,6 +264,7 @@
             text-transform:uppercase;
             display:block;
             line-height:1;
+            @include transition(all 0.5s ease);
             i{
                 margin-right:5px;
             }
@@ -293,13 +340,11 @@
             margin-right:12px;
             border-right:1px solid #404040;
             line-height:1;
-            &:last-child{
-                border:none;
-            }
+            
         }
         a{
             display:block;
-            font-size:0.857em;
+            font-size:0.769em;
             color:#404040;
              line-height:1;
              text-transform:uppercase;
@@ -314,9 +359,11 @@
     }
     .wish-list-add-cart{
         text-transform:uppercase;
-        font-size:1em;
+        font-size:0.769em;
         color:$theme-color;
         font-weight:700;
+        
+
         i{
             margin-right:7px;
         }
@@ -349,13 +396,14 @@
     }
     li{
         list-style:none;
-    }
+    }  
     .heading{
         margin-top:0px;
         .cart-heading{
             color:#3e3e3e;
             font-size:0.857em;
-            border-color:#cccccc;
+            padding-top:10px;
+            padding-bottom:10px;
         }
     }
     
@@ -439,3 +487,122 @@
             } 
         }
     }
+
+
+    .save-card-check-box.make-default-checkbox{
+        float:none;
+        .checkbox-label{
+            color: #838282;
+            text-transform: uppercase;
+            display: block;
+            line-height: 1;
+                font-size: 0.769em;
+                font-weight:400;
+                @include transition(all 0.5s ease);
+                &:hover,&:focus{
+                    color:$orange;  
+                }
+        }
+        [type="checkbox"]:not(:checked) + label:before,  [type="checkbox"]:checked + label:before{
+            width:9px;
+            height:9px;
+            border-width:1px;
+            border-color:#838282;
+            top:0;
+            left:4px;
+        }
+         [type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after{
+            top:0px;
+            left:5px;
+         }
+            
+    }
+
+    .add-biling-add{
+        margin-left:0;
+        padding:15px 25px;
+        border:1px solid $theme-color;
+        &:hover,&:focus{
+            color:$orange;
+            border-color:$orange;
+        }   
+    }
+
+    .save-card-check-box.make-default-checkbox.pull-right{
+        margin-top:6px;
+    }
+
+    .new-card {
+        a.btn.btn-default{
+            @include transition(all 0.5s ease);
+            &:hover,&:focus{
+                background:$orange;
+                border-color:$orange;    
+            }
+        }
+        .add-biling-add{
+            @include transition(all 0.5s ease);
+        }
+    }
+    
+
+    .my-address-book-inner.new-card.no-border{
+        border:none;
+    }
+
+    .modal-header .close{
+        font-size:1.3em;
+    }
+
+
+
+    .content-row.cart_item{
+        position:relative;
+        
+    }
+    .progress-bar{   
+       display:block !important;
+       .steps{
+            max-width:450px;
+        }
+        ul.progressbar{
+            width:450px;
+        }
+        ul.progressbar li.done:before, ul.progressbar li.done:after,ul.progressbar li.current:before{
+            background:$orange;
+            top:4px;
+        }
+        ul.progressbar li:after{
+            background:#fff;
+            border:1px solid $orange;
+            height:3px;
+            top:4px;
+
+        }
+        ul.progressbar li{
+            font-size:0.769em;
+            color:$theme-color;
+        }
+
+        ul.progressbar li:before{
+            width:10px;
+            height:10px;
+            line-height:10px;
+            content:'';
+            background:$orange;
+        }
+     }
+
+
+.process-steps{
+    position:relative;
+    .progress-bar{
+        position:absolute;
+        bottom:-24px;
+        right:-53px;
+        z-index:99;
+    }
+}
+    
+
+   

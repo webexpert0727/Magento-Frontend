@@ -7,9 +7,9 @@
 		text-decoration: none;
 	}
 .cart-heading{
-	font-size: 1.128em;
+	font-size: 1.076em;
 	letter-spacing: 0.025em;
-	padding: 20px 18px;
+	padding: 12px 18px;
 	margin: 0;
 	text-transform: uppercase;
 	border-top: 1px solid #fff;
@@ -37,7 +37,7 @@
 			padding-top:13px;
 			padding-bottom:13px;
 			border-bottom:1px solid #e6e6e6;
-			font-size:1.071em;
+			font-size:0.923em;
 			letter-spacing: 0.050em;
 			font-weight: 500;
 			text-transform: uppercase;
@@ -91,8 +91,8 @@
 		h5 {
 			margin-top: 0;
 			margin-bottom:0; 
-			text-transform: uppercase;
-			font-size: 1.1428em;
+			text-transform: none;
+			font-size: 1.0769em;
 			font-weight: 400;
 			b{
 				font-weight: 500;
@@ -101,8 +101,8 @@
 		p{
 			color: $theme-color;
 			font-family: $font-family-2;
-			margin: 0;
-			font-size: 1em;
+			margin: 0 0 2px 0;
+			font-size: 1.0769em;
 			span{
 				color: #999;
 			}
@@ -112,6 +112,7 @@
 			font-size: 0.7142em;
 			font-weight: 400;
 			margin: 0;
+			margin-bottom:12px;
 		}
 }
 	
@@ -127,7 +128,7 @@
 	text-align: center;
 }
  .content-row .product-price{
-	font-size: 1.1428em;
+	font-size: 1.0769em;
 	font-family: $font-family-2;
 	color: $theme-color;
 	width: 120px;
@@ -142,7 +143,8 @@
 }
 .header-row .product-delete, .content-row .product-delete{
 	font-size: 1em;
-	text-align:center;
+	text-align:right;
+	padding-right:30px;
 	width: 130px;
 	a{
 		color: #cccccc;
@@ -152,6 +154,7 @@
 		}
 	}
 }
+
 
 
 
@@ -328,7 +331,6 @@
   		font-size: 1em;
       font-weight: 700;
       text-transform: uppercase;
-      height: 50px;
       padding: 12px 67px;
       float: right;
       border:1px solid #999999;
@@ -377,7 +379,7 @@
 			a{
 				color: $text-color;
 				font-weight: 500;
-				font-size: 0.928em;
+				font-size: 0.9230em;
 				text-transform: uppercase;
 				&:hover, &:focus{
 					color: $orange;
@@ -452,14 +454,14 @@
 	
 	.check::before { display: block; position: absolute; content: ''; border-radius: 100%; height: 7px; width: 7px; top: 5px; left: 5px; margin: auto; @include transition(background 0.25s linear);}
 	input[type=radio]{position: absolute;visibility: hidden;}
-	label.main_Label{display: block;position: relative; font-weight: 400; font-size: 1.4285em; padding: 5px 5px 5px 40px; margin: 10px auto; z-index: 9; cursor: pointer; @include transition(all 0.25s linear); }
+	label.main_Label{display: block;position: relative; font-weight: 400; font-size: 1.0769em; padding: 7px 5px 5px 40px; margin: 10px auto; z-index: 9; cursor: pointer; @include transition(all 0.25s linear); }
 	.check{display: block; position: absolute; border: 2px solid $border-color; border-radius: 100%; height: 21px; width: 21px; top: 10px; left: 7px; z-index: 5; @include transition(border .25s linear);}
 	input[type=radio]:checked ~ .check {border: 2px solid $border-color;}
 	input[type=radio]:checked ~ .check::before{ background: $theme-color;}
 	input[type=radio]:checked ~ label.main_Label{ color:$theme-color;}
 }
 .credit_card_block {
-	label.main_Label{font-size: 1.4285em; font-weight: 400; text-transform: capitalize; color: #151f3c;}
+	label.main_Label{font-size: 1.0769em; font-weight: 400; text-transform: capitalize; color: #151f3c;}
 	
 }
 .payment_box{
@@ -497,6 +499,7 @@
   .add-border{
   	border-bottom: 1px solid $border-color;
   	padding-bottom: 40px;
+  	max-width:598px;
   }
   .payment_box.payment_method_intuit_qbms {
     border-top:1px solid $border-color;
@@ -508,10 +511,10 @@
 	display: flex;
   flex-flow: row wrap;
   background: #f3f3f3;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px; 
   border: 1px solid #f5f5f5;
-  border-radius: 10px;
+  border-radius: 6px;
   margin-bottom: 27px;
   line-height: 1;
   margin-left: 25px;
@@ -557,6 +560,7 @@ margin-left: 30px;
 				border-left: none;
 			}
 			a{
+				font-size:1.0769em;
 				i{
 					padding-right: 8px;
 				}
@@ -628,4 +632,145 @@ margin-left: 30px;
 .save-card-check-box [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1); 
+}
+
+
+.wrapper-dropdown-3 {
+    /* Size and position */
+    position: relative;
+    float: left;
+    width: 230px;
+    margin: 0 auto;
+    padding:20px 13px 22px 10px;
+    height: 65px;
+
+    /* Styles */
+    background: rgba(#fff, 0.89);
+    cursor: pointer;
+    border:none;
+
+    outline: none;
+
+    /* Font settings */
+    font-size:1em;
+    text-transform: capitalize;
+    color: $theme-color;
+    letter-spacing: 0.100em;
+    font-weight: 400;
+    &:after {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    right: 15px;
+		    top: 50%;
+		    margin-top: -3px;
+		    border-width: 7px 7px 0 7px;
+		    border-style: solid;
+		    border-color: red transparent;
+		}
+		
+		.dropdown {
+		  /* Size & position */
+		    position: absolute;
+		    top: 91%;
+		    left: 0%;
+		    width: 100%;
+		    right: auto;
+		    z-index: 8;
+		    /* Styles */
+		    background: #fff;
+		    padding-left:0;
+		    border-radius: 0;
+		    border: 1px solid #969696;
+		    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		    font-weight: normal;
+		    @include transition(0.5s ease);
+		    list-style: none;
+		    /* Hiding */
+		    opacity: 0;
+		    pointer-events: none;
+		    &:after {
+			    content: "";
+			    width: 0;
+			    height: 0;
+			    position: absolute;
+			    bottom: 100%;
+			    right: 15px;
+			    border-width: 0 6px 6px 6px;
+			    border-style: solid;
+			    border-color: #fff transparent;    
+			}
+			&:before {
+			    content: "";
+			    width: 0;
+			    height: 0;
+			    position: absolute;
+			    bottom: 100%;
+			    right: 13px;
+			    border-width: 0 8px 8px 8px;
+			    border-style: solid;
+			    border-color: rgba(0,0,0,0.1) transparent;    
+			}
+			li{
+				margin:0;
+			}
+			li a {
+			    display: block;
+			    padding: 10px;
+			    text-decoration: none;
+			    color: red;
+			    font-size: 14px;
+			    letter-spacing: 0.100em;
+			    font-weight: normal;
+			    border-bottom: 1px solid red;
+			    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+			    @include  transition(all 0.3s ease-out);
+			}
+			li:hover a {
+    			background: red;
+    			color: #fff;
+			}
+		}
+	}
+
+
+/* Active state */
+
+.wrapper-dropdown-3.active .dropdown {opacity: 1; pointer-events: auto;}
+.wrapper-dropdown-3 span a{display: inline-block; max-width: 85%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+
+
+
+.tooltip {
+    display: inline-block;
+    opacity:1;
+    top:2px;
+    left:45px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #fff;
+    border:1px solid #000;
+    color: $theme-color;;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top:-30px;
+    left:-25px;
+    font-size:1em;
+    
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

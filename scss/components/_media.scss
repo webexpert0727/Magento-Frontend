@@ -6,7 +6,7 @@ $xxs : 640px;
 $xxxs : 480px;
 
 @media only screen and (max-width:1200px){
-	.myprofile-tab-content .date-of-birth select{width:32%;}
+	.myprofile-tab-content .date-of-birth .select-style1{width:32%;}
 	#logo{max-width:250px;}
 	#search-icon{width:160px;}
 	#NavWrap{margin-top:18px;}
@@ -25,6 +25,7 @@ $xxxs : 480px;
 	.footer-inner a{font-size:0.8em;}
 	.wsdownmenu-animated-arrow{top:18px;}
 	.nav-tabs > li > a{font-size:0.9em;}
+	.process-steps .progress-bar{position:static;text-align:right;}
 }
 @media only screen and (max-width:$xs ){
 	.footer-inner{text-align:center;}
@@ -62,6 +63,11 @@ $xxxs : 480px;
 	.z-tabs.silver > ul > li > a{
 		 background-color: #fff;
 	}
+	.sidr{max-width:500px;width:90%;}
+	.side-bar{padding:40px 20px;}
+	.side-bar-inner h2{font-size:1.2em;}
+	.side-bar-inner .forgot-password{font-size:0.7em;margin-top:6.5px;}
+	.checkbox-label{font-size:0.8em;}
 }
 @media only screen and (max-width:$xxs ){
 	.newsletter-wrap .newsletter-box .form-group{float:left;width:58%;}
@@ -116,4 +122,5 @@ $xxxs : 480px;
 	.size-selection .size-chart{float:none;margin-bottom:15px;display:block;}
 	.size-selection ul{display:block;margin-bottom:0;}
 	.size-selection ul li{margin-bottom:0;}
+	.progress-bar ul.progressbar{width:100%;}
 }

@@ -197,7 +197,62 @@ $('.product-slider').owlCarousel({
           }
       });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
+
+
+$(document).mouseup(function (e){
+    var container = $(".user-information1 ,.user-information");
+    if (!container.is(e.target) && container.has(e.target).length === 0)
+    {
+        container.hide();
+    }
+});
+
+
+jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});
+
+
+$('.quick_Add').bind('mouseenter click', function() {
+ var $this = $(this);
+ $this.parents().find('.singlerating').find('.size-selection').css('opacity','1');
+});
+$('.singlerating').bind('mouseleave blur', function() {
+ var $this = $(this);
+ $this.parents().find('.singlerating').find('.size-selection').css('opacity','0');
+});
+
+
+     
+$('.shop-color li').each(function(){
+            var DD = $(this).find('a').data('color');
+            $(this).find('a').css('backgroundColor', DD);
+        });
 
 })(jQuery);
 

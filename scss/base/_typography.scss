@@ -52,3 +52,5 @@ ul, ol{
 li{
 	margin-bottom: 0.900em;
 }
+
+button{@include transition(all 0.5s ease);}

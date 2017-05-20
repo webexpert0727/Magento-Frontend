@@ -44,7 +44,9 @@
             display:inline-block;
             border-right:1px solid #717171;
             padding-right:7px;
+            padding-left:7px;
             // margin-right:7px;
+            line-height: 1;
             text-align: left;
             &:last-child{
                 padding-right:0;
@@ -84,4 +86,183 @@
             margin-left:5px;
         }
     }
+}
+
+.load-more-button{
+    @include transition(all 0.5s ease);
+    &:hover,&:focus{
+        border-color:$orange;
+    }
+}
+
+
+.custom-dropdown {
+    display: block;
+    font: 13px Helvetica, Tahoma, serif;
+    text-transform: uppercase;
+    margin: 0; 
+    padding: 0;
+}
+
+.custom-dropdown li {
+    display: inline-block;
+    list-style: none;
+}
+
+.custom-dropdown .button-dropdown {
+    position: relative;
+}
+
+.custom-dropdown li a {
+    display: block;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.custom-dropdown li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    color: #999;
+}
+
+.custom-dropdown li a:hover, .custom-dropdown li a.dropdown-toggle.active {
+    background-color: #289dcc;
+    color: #fff;
+}
+
+.custom-dropdown li a:hover span, .custom-dropdown li a.dropdown-toggle.active span {
+    color: #fff;
+}
+
+.custom-dropdown li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: left;
+}
+
+.custom-dropdown li .dropdown-menu.active {
+    display: block;
+}
+
+.custom-dropdown li .dropdown-menu a {
+    width: 150px;
+}
+
+.product-size{
+    .dropdown-menu{
+        position:absolute;
+        top:45px;
+    }
+}
+
+
+.product-size [type="checkbox"]:not(:checked),
+.product-size [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.product-size [type="checkbox"]:not(:checked) + label,
+.product-size [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.product-size [type="checkbox"]:not(:checked) + label:before,
+.product-size [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 12px; height: 13px;
+  border: 1px solid $text-color;
+  background: #fff;
+}
+/* checked mark aspect */
+.product-size [type="checkbox"]:not(:checked) + label:after,
+.product-size [type="checkbox"]:checked + label:after {
+  content: '\f00c';
+  position: absolute;
+  top: 0px; left: 2px;
+  font-size: 1em;
+  line-height: 0.8;
+  color: $text-color;
+  transition: all .2s;
+  font-family:'FontAwesome';
+}
+/* checked mark aspect changes */
+.product-size [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0); 
+}
+.product-size [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.checkbox-label{
+    font-size:0.928em;
+    color:$text-color;
+    text-transform:uppercase;
+    line-height:1;
+    font-weight:500;
+}
+.product-size{
+    .dropdown{
+        a{
+            font-size: 0.923em;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 0;
+            color: $theme-color;
+            &:hover, &:focus{
+                color: #6d6d6d;
+                text-decoration: none;
+            }
+        }
+        .dropdown-menu{
+            min-width: 300px;
+            padding: 20px;
+            top:25px;
+        }
+    }
+    .popurlity{
+         .dropdown-menu{
+            right: 0;
+            min-width: 200px;
+            left: auto;
+        }
+
+    }
+    .shop-color{
+        ul{
+             text-align: left;
+             margin: 0;
+            li{
+            margin: 0 6px 6px 0;
+             display: inline-block;
+             border: none;
+             text-align: left;
+            a{
+               display: block;
+               border: 2px solid #cccccc;
+               width:30px;
+               height:30px;
+                text-indent: -9999px;
+                &:hover, &:focus{
+                    box-shadow:0 0 6px rgba(0,0,0,.6) inset;
+                    border: 2px solid $theme-color;
+                }
+            }
+        }
+        }
+    }
+
+
 }

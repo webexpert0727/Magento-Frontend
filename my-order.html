@@ -22,7 +22,7 @@
 							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
 								<div class="user-information">
 									<div>
-										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<p class="close2"><a href="javascript:;">X</a></p>
 										<ul>
 											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
 											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
@@ -295,6 +295,7 @@
 															</div>
 														</a>
 												<div>
+													<div class="process-steps">
 												<div class="shop_table cart single-row1 tab-content-cart">
 													<div class="header-row">
 														<div class="product-name">product name</div>
@@ -367,9 +368,17 @@
 													</div>
 
 													
+
+													
 												</div>
 
 											</div>
+											<div class="progress-bar">
+														<div class="steps"></div>
+													</div>
+										</div>
+
+											
 											
 											<div class="cart-total-price clearfix">
 												<h6>Ordered On Wed, Nov 16th '16</h6>
@@ -391,6 +400,7 @@
 												</div>
 											    </a>
 											    <div>
+											    	<div class="process-steps">
 												<div class="shop_table cart single-row1 tab-content-cart">
 													<div class="header-row">
 														<div class="product-name">product name</div>
@@ -467,6 +477,11 @@
 
 											</div>
 												
+
+												<div class="progress-bar">
+														<div class="steps"></div>
+													</div>
+										</div>
 												<div class="cart-total-price clearfix">
 													<h6>Ordered On Wed, Nov 16th '16</h6>
 													<p>TOTAL ORDER: 893 aed</p>
@@ -674,6 +689,7 @@
 	<script type="text/javascript" src="js/vendors/jquery.dotdotdot.min.js"></script>
 	<script type="text/javascript" src="js/vendors/jquery.magnific-popup.min.js"></script>	
 	<script type="text/javascript" src="js/vendors/jquery.sidr.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.progressbar.js"></script>
 	<script src="js/scripts.js"></script>
 	<script>
 		
@@ -682,7 +698,30 @@
 		  $(this).tab('show') 
 		})
 
-	</script>
+	</script> 
+
+	<script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('.steps').progressbar({
+        steps: ['Ordered from (intl) partner', '~Recived', '@Out for delivery', 'Delivered',]
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
 

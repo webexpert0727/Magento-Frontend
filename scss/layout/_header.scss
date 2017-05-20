@@ -18,13 +18,13 @@
 			}
 		}
 		i.fa-user-o{
-			font-size:2.1428em;
+			font-size:2em;
 		}
 		i.ion-bag{
-			font-size:2.4285em;
+			font-size:2em;
 		}
 		i.ion-android-favorite-outline{
-			font-size:2.7571em;
+			font-size:2.307em;
 		}
 		
 	}
@@ -79,11 +79,12 @@
   	}
   	li{
   		display: block;
-  		line-height: 22px;
+  		line-height: 14px;
   		margin-left: 0;
   		a{
   			font-weight: 400;
   			text-transform: capitalize;
+        font-size:0.923em;
   		}
   	}
   }
@@ -93,7 +94,8 @@
 #main{
   li{
     a{
-      font-size:1em;
+      font-size:0.923em;
+      font-weight:400;
     }
   }
 }
@@ -136,11 +138,15 @@
     font-size: 0.8571em;
     letter-spacing: 0.050em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center; 
     
     + li:before{
-      content: "> ";
-
+      content: "\f105";
+      font-family:'FontAwesome';
+      font-size:1.3em;
+      color:#969696;
+      margin-left:5px;
+      margin-right:5px;
     }
     > a{
       color: #969696;
@@ -166,6 +172,20 @@
   top:0;
   left:0;
   width:100%;
-  z-index:99;
+  z-index:9999;
   background:#fff;
+    }
+
+    .close2{
+      a{
+         font-size:0.935em;
+      &:hover,&:focus{
+        text-decoration:none;
+      }
+      }
+     
+    }
+
+    .home-cart-view{
+      
     }

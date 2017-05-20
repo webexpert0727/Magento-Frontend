@@ -23,7 +23,7 @@
 							<li class="user"><a href="javascript:;"><i class="fa fa-user-o"></i></a>
 								<div class="user-information">
 									<div>
-										<p class="close2"><a href="javascript:;"><span class="fa fa-close"></span></a></p>
+										<p class="close2"><a href="javascript:;">X</a></p>
 										<ul>
 											<li><a href="javascript:;"><span class="fa fa-cog"></span>my dashboard</a></li>
 											<li><a href="javascript:;"><span class="fa fa-file-text-o"></span>my order</a></li>
@@ -290,7 +290,7 @@
 							    	<div class="tab-content-text myprofile-tab-content">
 								    		<h4 class="tab-content-head">MY CARD</h4>
 								    		<p class="currently-no-add">You have no saved cards.</p>
-								    		<div class="my-address-book-inner new-card"> 
+								    		<div class="my-address-book-inner new-card no-border"> 
 												<a href="#myModal3" class="btn btn-default  btn-info btn-lg" data-toggle="modal" >ADD NEW CARD</a>
 												<div class="row">
 													<div class="shipped-address-border no-border clearfix">
@@ -305,7 +305,15 @@
 																<ul class="edit-address">
 																	<li><a href="#"><i class="fa fa-pencil-square-o"></i>Edit</a></li>
 																	<li><a href="#"><i class="fa fa-trash"></i>Remove</a></li>
-																	<li><a href="#"><i class="fa fa-check-square-o"></i>MAKE DEFAULT</a></li>
+																	<li>
+																		<div class="save-card-check-box make-default-checkbox">
+																			<p>
+																		    	<input type="checkbox" id="make-default5" >
+																		    	<label for="make-default5" class="checkbox-label">MAKE DEFAULT</label>
+																		  	</p>
+																		  </div>
+
+																	</li>
 																</ul>
 
 															</div>
